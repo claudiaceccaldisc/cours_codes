@@ -1,0 +1,36 @@
+[{   
+    "idExpConduite": "1",
+    "date": "2024-10-22",
+    "heureDebut": "12:00",
+    "heureFin": "13:00",
+    "km": 15,
+    "idMeteo" : 1,
+    "idEnvironnement": 2,
+    "idEveTransport": 1
+
+  },
+
+  {
+    "idExpConduite": "2",
+    "date": "2024-10-10",
+    "heureDebut": "13:00",
+    "heureFin": "14:00",
+    "km": 30,
+    "idMeteo": 5,
+    "idEvenement": 5,
+    "idEveTransport": 6
+  },
+
+  {
+    "idExpConduite": "3",
+    "date": "2024-10-13",
+    "heureDebut": "16:00",
+    "heureFin": "17:00",
+    "km": 20,
+    "idMeteo": 3,
+    "idEveTransport": 2,
+    "idUrgence": 2
+
+  }
+
+]

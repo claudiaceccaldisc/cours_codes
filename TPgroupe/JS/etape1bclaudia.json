@@ -1,0 +1,15 @@
+[
+  {"idMeteo": 1, "nomMeteo":"Ensoleillée"}, 
+  {"idMeteo": 2, "nomMeteo":"Pluie"}, 
+  {"idMeteo": 3, "nomMeteo":"Brouillard"}, 
+  {"idMeteo": 4, "nomMeteo":"Neige"}, 
+  {"idMeteo": 5, "nomMeteo":"Vent"}, 
+  {"idMeteo": 6, "nomMeteo":"Orage"},
+  {"idMeteo": 7, "nomMeteo":"Nuageux"},
+  {"idMeteo": 8, "nomMeteo": "Canicule"},
+  {"idMeteo": 9, "nomMeteo": "Grêle"},
+  {"idMeteo": 10, "nomMeteo": "Averses"},
+  {"idMeteo": 11, "nomMeteo": "Tempête"},
+  {"idMeteo": 12, "nomMeteo": "Gel"}
+
+]

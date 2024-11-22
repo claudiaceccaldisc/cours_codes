@@ -1,0 +1,40 @@
+{
+  "environnements": [
+  {"idEnvironnement": 1, "nomEnvironnement": "Pollution de l'air"}, 
+  {"idEnvironnement": 2, "nomEnvironnement": "Pollution sonore"},
+  {"idEnvironnement": 3, "nomEnvironnement": "Débordement de cours d'eau"},
+  {"idEnvironnement": 4, "nomEnvironnement": "Risques d'inondation"},
+  {"idEnvironnement": 5, "nomEnvironnement": "Glissement de terrain"},
+  {"idEnvironnement": 6, "nomEnvironnement": "Chute de pierres"}     
+ ],
+
+ "evenements": [
+  {"idEvenement": 1, "nomEvenement": "Course cycliste"},
+  {"idEvenement": 2, "nomEvenement": "Fête foraine ou marché"},
+  {"idEvenement": 3, "nomEvenement": "Manifestation"},
+  {"idEvenement": 4, "nomEvenement": "Festival ou Concert"},
+  {"idEvenement": 5, "nomEvenement": "Fermeture des zones publiques pour évènements"}
+ ],
+
+"transports": [
+  {"idEveTransport": 1,"nomEveTransport": "Traffic important"},
+  {"idEveTransport": 2,"nomEveTransport": "Accident de la route"},
+  {"idEveTransport": 3,"nomEveTransport": "Travaux routiers"},
+  {"idEveTransport": 4,"nomEveTransport": "Embouteillage"},
+  {"idEveTransport": 5,"nomEveTransport": "Obstacle sur la route"},
+  {"idEveTransport": 6,"nomEveTransport": "Routes fermées"}
+ ],
+
+"urgences": [
+  {"idUrgence": 1,"nomUrgence": "Intervation des pompiers"},
+  {"idUrgence": 2,"nomUrgence": "Intervation des forces de l'ordre"},
+  {"idUrgence": 3,"nomUrgence": "Evacuation d'urgence"}
+ ]
+}
+
+
+
+
+
+
+

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Expérience de Conduite</title>
+    <style>
+        :root {
+            --primary-color: #17212b;
+            --white-color: #f0f8ff;
+            --secondary-color: rgb(235, 235, 109);
+            box-sizing: border-box;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #2c3e50;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header, footer {
+            width: 100%;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer {
+            font-size: 0.8rem;
+            position: relative;
+            bottom: 0;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border: 3px solid orange;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="time"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .main-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            width: 100%;
+        }
+
+        /* Responsivité */
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Assistant d'Expérience de Conduite</h1>
+    </header>
+
+    <div class="main-container">
+        <div class="form-container">
+            <form>
+                <section class="left">
+                    <!-- Date de l'expérience -->
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <!-- Heure de début et de fin -->
+                    <label for="heureDebut">Heure de début</label>
+                    <input type="time" id="heureDebut" name="heureDebut" required>
+
+                    <label for="heureFin">Heure de fin</label>
+                    <input type="time" id="heureFin" name="heureFin" required>
+
+                    <!-- Kilométrage -->
+                    <label for="km">Kilométrage parcouru</label>
+                    <input type="number" id="km" name="km" required>
+
+                    <!-- Météo -->
+                    <label for="meteo">Météo</label>
+                    <select id="meteo" name="meteo" required>
+                        <option value="1">Ensoleillée</option>
+                        <option value="2">Pluie</option>
+                        <option value="3">Brouillard</option>
+                        <option value="4">Neige</option>
+                        <option value="5">Vent</option>
+                        <option value="6">Orage</option>
+                        <option value="7">Nuageux</option>
+                        <option value="8">Canicule</option>
+                        <option value="9">Grêle</option>
+                        <option value="10">Averses</option>
+                        <option value="11">Tempête</option>
+                        <option value="12">Gel</option>
+                    </select>
+                </section>
+                    <!-- Trafic -->
+                <section class="right">
+                    <label for="trafic">Trafic</label>
+                    <select id="trafic" name="trafic" required>
+                        <option value="1">Faible</option>
+                        <option value="2">Modéré</option>
+                        <option value="3">Fort</option>
+                        <option value="4">Fluctuant</option>
+                    </select>
+
+                    <!-- Environnement -->
+                    <label for="environnement">Environnement</label>
+                    <select id="environnement" name="environnement" required>
+                        <option value="1">Citadin</option>
+                        <option value="2">Rural</option>
+                        <option value="3">Autoroutier</option>
+                        <option value="4">Montagnard</option>
+                    </select>
+
+                    <!-- Manoeuvre -->
+                    <label for="manoeuvre">Manœuvre</label>
+                    <select id="manoeuvre" name="manoeuvre" required>
+                        <option value="1">Stationnement en épi</option>
+                        <option value="2">Stationnement en bataille</option>
+                        <option value="3">Stationnement en créneau</option>
+                    </select>
+
+                    <!-- Type de Route -->
+                    <label for="typeRoute">Type de Route</label>
+                    <select id="typeRoute" name="typeRoute" required>
+                        <option value="1">Nationale</option>
+                        <option value="2">Départementale</option>
+                        <option value="3">Autoroute</option>
+                        <option value="4">Centre-ville</option>
+                        <option value="5">Mixte</option>
+                    </select>
+
+                    <!-- Événements de Transport -->
+                    <label for="transport">Événement de Transport</label>
+                    <select id="transport" name="transport" required>
+                        <option value="1">Traffic important</option>
+                        <option value="2">Accident de la route</option>
+                        <option value="3">Travaux routiers</option>
+                        <option value="4">Embouteillage</option>
+                        <option value="5">Obstacle sur la route</option>
+                        <option value="6">Routes fermées</option>
+                    </select>
+                </section>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Créé par Claudia CECCALDI | &copy; 2024</p>
+    </footer>
+</body>
+</html>

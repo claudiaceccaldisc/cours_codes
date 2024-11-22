@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etape 1d - Claudia</title>
+    <script>
+        let expConduite = [
+        {   
+    "idExpConduite": "1",
+    "date": "2024-10-22",
+    "heureDebut": "12:00",
+    "heureFin": "13:00",
+    "km": 15,
+    "idMeteo" : 1,
+    "idEnvironnement": 2,
+    "idEveTransport": 1
+
+  },
+
+  {
+    "idExpConduite": "2",
+    "date": "2024-10-10",
+    "heureDebut": "13:00",
+    "heureFin": "14:00",
+    "km": 30,
+    "idMeteo": 5,
+    "idEvenement": 5,
+    "idEveTransport": 6
+  },
+
+  {
+    "idExpConduite": "3",
+    "date": "2024-10-13",
+    "heureDebut": "16:00",
+    "heureFin": "17:00",
+    "km": 20,
+    "idMeteo": 3,
+    "idEveTransport": 2,
+    "idUrgence": 2
+
+  }
+        ]
+
+   let meteo =[
+   {"idMeteo": 1, "nomMeteo":"Ensoleillée"}, 
+  {"idMeteo": 2, "nomMeteo":"Pluie"}, 
+  {"idMeteo": 3, "nomMeteo":"Brouillard"}, 
+  {"idMeteo": 4, "nomMeteo":"Neige"}, 
+  {"idMeteo": 5, "nomMeteo":"Vent"}, 
+  {"idMeteo": 6, "nomMeteo":"Orage"},
+  {"idMeteo": 7, "nomMeteo":"Nuageux"},
+  {"idMeteo": 8, "nomMeteo": "Canicule"},
+  {"idMeteo": 9, "nomMeteo": "Grêle"},
+  {"idMeteo": 10, "nomMeteo": "Averses"},
+  {"idMeteo": 11, "nomMeteo": "Tempête"},
+  {"idMeteo": 12, "nomMeteo": "Gel"}
+   ]
+
+   let environnement = [
+   {"idEnvironnement": 1, "nomEnvironnement": "Pollution de l'air"}, 
+  {"idEnvironnement": 2, "nomEnvironnement": "Pollution sonore"},
+  {"idEnvironnement": 3, "nomEnvironnement": "Débordement de cours d'eau"},
+  {"idEnvironnement": 4, "nomEnvironnement": "Risques d'inondation"},
+  {"idEnvironnement": 5, "nomEnvironnement": "Glissement de terrain"},
+  {"idEnvironnement": 6, "nomEnvironnement": "Chute de pierres"}  
+   ]
+
+   let evenement = [
+   {"idEvenement": 1, "nomEvenement": "Course cycliste"},
+  {"idEvenement": 2, "nomEvenement": "Fête foraine ou marché"},
+  {"idEvenement": 3, "nomEvenement": "Manifestation"},
+  {"idEvenement": 4, "nomEvenement": "Festival ou Concert"},
+  {"idEvenement": 5, "nomEvenement": "Fermeture des zones publiques pour évènements"}
+   ]
+
+   let transport = [
+   {"idEveTransport": 1,"nomEveTransport": "Traffic important"},
+  {"idEveTransport": 2,"nomEveTransport": "Accident de la route"},
+  {"idEveTransport": 3,"nomEveTransport": "Travaux routiers"},
+  {"idEveTransport": 4,"nomEveTransport": "Embouteillage"},
+  {"idEveTransport": 5,"nomEveTransport": "Obstacle sur la route"},
+  {"idEveTransport": 6,"nomEveTransport": "Routes fermées"}
+   ]
+
+   let urgence =[
+   {"idUrgence": 1,"nomUrgence": "Intervation des pompiers"},
+  {"idUrgence": 2,"nomUrgence": "Intervation des forces de l'ordre"},
+  {"idUrgence": 3,"nomUrgence": "Evacuation d'urgence"}
+   ]
+console.log(expConduite, meteo, evenement, environnement, transport, urgence);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
